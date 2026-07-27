@@ -6,8 +6,14 @@ body {
 }
 
 .popup {
-  width: 260px;
+  width: 340px;
   padding: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #3a3a4d;
+  margin: 12px 0;
 }
 
 h1 {
@@ -31,4 +37,95 @@ button {
 
 button:hover {
   background: #6d28d9;
+}
+
+button:disabled {
+  background: #4a4a5a;
+  cursor: default;
+}
+
+#results {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.field-label {
+  display: block;
+  font-size: 11px;
+  color: #a78bfa;
+  margin-top: 4px;
+}
+
+#target-url {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 4px 0 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  background: #2a2a3a;
+  border: 1px solid #3a3a4d;
+  border-radius: 4px;
+  color: #f5f5f5;
+}
+
+#target-url:focus {
+  outline: 1px solid #7c3aed;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.categories label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.export-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.export-row button {
+  margin-top: 0;
+  flex: 1 1 auto;
+  font-size: 11px;
+  padding: 6px 8px;
+}
+
+.section h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #a78bfa;
+  margin: 10px 0 4px;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section li {
+  font-size: 12px;
+  padding: 3px 0;
+  border-bottom: 1px solid #2a2a3a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section .empty {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 6px;
 }

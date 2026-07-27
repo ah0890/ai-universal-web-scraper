@@ -10,7 +10,30 @@
     <h1>AI Universal Web Scraper</h1>
     <p>Backend status: <span id="backend-status">checking...</span></p>
     <button id="check-backend">Recheck</button>
+
+    <hr />
+
+    <label class="field-label" for="target-url">URL (optional — blank uses the current tab)</label>
+    <input type="url" id="target-url" placeholder="https://example.com" />
+
+    <div class="categories">
+      <label><input type="checkbox" class="category-checkbox" value="links" checked /> Links</label>
+      <label><input type="checkbox" class="category-checkbox" value="images" checked /> Images</label>
+      <label><input type="checkbox" class="category-checkbox" value="emails" checked /> Emails</label>
+      <label><input type="checkbox" class="category-checkbox" value="phones" checked /> Phones</label>
+    </div>
+
+    <button id="extract-data">Extract Data</button>
+    <div id="results"></div>
+
+    <div class="export-row">
+      <button id="copy-json" disabled>Copy JSON</button>
+      <button id="download-json" disabled>Download JSON</button>
+      <button id="download-csv" disabled>Download CSV</button>
+      <button id="download-xlsx" disabled>Download Excel</button>
+    </div>
   </main>
+  <script src="../libs/xlsx.core.min.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
